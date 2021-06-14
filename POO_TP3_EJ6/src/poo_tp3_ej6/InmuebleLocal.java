@@ -21,10 +21,11 @@ public class InmuebleLocal extends Inmueble{
         this.nroVentanas = nroVentanas;
     }
     
+    @Override
     public double precioFinal(){
         double precious;
         
-        precious = super.precio();
+        precious = super.precioFinal();
         
         if(super.getNroMts2()>50){
             precious = precious + (precious/100);

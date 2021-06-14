@@ -20,10 +20,11 @@ public class InmueblePiso extends Inmueble{
         this.nroPiso = nroPiso;
     }
     
+    @Override
     public double precioFinal(){
         double precious;
         
-        precious = super.precio();
+        precious = super.precioFinal();
         
         if(this.nroPiso>=3){
             precious = precious + ((precious*3)/100);

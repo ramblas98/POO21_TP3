@@ -49,7 +49,7 @@ public class Inmueble {
         this.precioBase = precioBase;
     }
     
-    public double precio(){
+    public double precioFinal(){
         double precio = this.precioBase;
         
         if(this.tiempoVida<15){
